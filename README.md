@@ -14,25 +14,58 @@ A local Python application for parsing and analyzing simulated hardware and sili
 
 All processing runs locally. The project does not require API keys or cloud services.
 
-## Setup
+## Install and run
 
-Python 3.10 or newer is required.
+You can run the dashboard locally on macOS, Windows, or Linux. You need Python 3.10 or newer and Git. The commands below download the project from GitHub, create an isolated Python environment, install the project and dashboard dependencies, and start Streamlit.
+
+### macOS or Linux
+
+Open Terminal and run:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\\Scripts\\activate
-python -m pip install -e '.[dev,dashboard]'
+git clone https://github.com/samar-x-007/hardware-test-log-analyzer.git
+cd hardware-test-log-analyzer
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -e "[dev,dashboard]"
+streamlit run app.py
 ```
 
-## Run
+### Windows (PowerShell)
 
-From the project root:
+Open PowerShell and run:
+
+```powershell
+git clone https://github.com/samar-x-007/hardware-test-log-analyzer.git
+cd hardware-test-log-analyzer
+py -3 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev,dashboard]"
+streamlit run app.py
+```
+
+Streamlit prints a local URL in the terminal (usually `http://localhost:8501`). Open that address in your browser. The dashboard starts with bundled synthetic sample logs; use **Upload** in the sidebar to analyze your own `.log` or `.txt` files.
+
+### Start it again later
+
+Open a terminal in the project folder, activate the environment, and start the app:
+
+```bash
+source .venv/bin/activate       # macOS/Linux
+streamlit run app.py
+```
+
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead. You only need to create the environment and install dependencies once per computer.
+
+### Other command-line examples
+
+From the project root with the environment activated:
 
 ```bash
 hwlog-analyzer data/sample_logs/*.log
 hwlog-analyzer data/sample_logs/validation_run_001.log --csv parsed.csv
 hwlog-analyzer data/sample_logs/*.log --db runs.sqlite --compare R001 R002
-streamlit run app.py
+python scripts/evaluate_diagnosis.py
 ```
 
 ## Demo walkthrough
