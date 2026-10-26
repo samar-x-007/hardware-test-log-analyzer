@@ -1,0 +1,50 @@
+{"id":"thermal-01","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:00:00Z run=E001 device=SIM-01 test=cpu_stress status=FAIL temp_c=96.2 voltage_v=0.80 freq_mhz=2100 error=THERMAL_THROTTLE message=frequency_dropped"}
+{"id":"pcie-01","expected":"pcie_link_training","log":"ts=2026-10-21T09:01:00Z run=E001 device=SIM-02 test=pcie_link status=ERROR error=PCIE_TRAIN_TIMEOUT message=link_training_timed_out"}
+{"id":"memory-01","expected":"memory_integrity","log":"ts=2026-10-21T09:02:00Z run=E001 device=SIM-03 test=memory_bist status=FAIL error=ECC_MULTI_BIT message=uncorrectable_ecc"}
+{"id":"voltage-01","expected":"low_supply_voltage","log":"ts=2026-10-21T09:03:00Z run=E001 device=SIM-04 test=compute status=FAIL voltage_v=0.68 error=EXECUTION_ERROR message=unexpected_reset"}
+{"id":"thermal-02","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:04:00Z run=E001 device=SIM-05 test=stress status=ERROR temp_c=91.0 error=OVER_TEMP_SHUTDOWN message=thermal_limit_reached"}
+{"id":"pcie-02","expected":"pcie_link_training","log":"ts=2026-10-21T09:05:00Z run=E001 device=SIM-06 test=pcie_gen5_link status=FAIL error=LINK_TRAIN_FAIL message=negotiation_timeout"}
+{"id":"memory-02","expected":"memory_integrity","log":"ts=2026-10-21T09:06:00Z run=E001 device=SIM-07 test=dram_validation status=ERROR error=DRAM_ECC_CORRECTED message=memory_syndrome_detected"}
+{"id":"unknown-01","expected":"unclassified_failure","log":"ts=2026-10-21T09:07:00Z run=E001 device=SIM-08 test=boot_smoke status=FAIL error=BOOT_SEQUENCE_17 message=unexpected_state_transition"}
+{"id":"thermal-03","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:08:00Z run=E002 device=SIM-09 test=vector_compute status=FAIL temp_c=87.3 freq_mhz=1950 error=PERF_LIMIT message=clock_reduced_under_load"}
+{"id":"thermal-04","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:09:00Z run=E002 device=SIM-10 test=graphics_stress status=ERROR error=OVER_TEMP message=thermal_shutdown"}
+{"id":"thermal-05","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:10:00Z run=E002 device=SIM-11 test=neural_stress status=FAIL temp_c=90.1 voltage_v=0.81 error=THERMAL_THROTTLE message=frequency_below_floor"}
+{"id":"thermal-06","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:11:00Z run=E003 device=SIM-12 test=cpu_burst status=ERROR temp_c=88.8 error=SENSOR_LIMIT message=temperature_guard_triggered"}
+{"id":"thermal-07","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:12:00Z run=E003 device=SIM-13 test=thermal_soak status=FAIL temp_c=94.0 error=THERMAL_TRIP message=hotspot_limit_exceeded"}
+{"id":"thermal-08","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:13:00Z run=E003 device=SIM-14 test=cpu_stress status=FAIL temp_c=86.2 freq_mhz=2050 error=FREQ_DROOP message=clock_throttled"}
+{"id":"thermal-09","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:14:00Z run=E004 device=SIM-15 test=package_power status=ERROR error=OVER_TEMP_SHUTDOWN message=emergency_thermal_stop"}
+{"id":"thermal-10","expected":"thermal_or_throttling","log":"ts=2026-10-21T09:15:00Z run=E004 device=SIM-16 test=cpu_stress status=FAIL temp_c=85.4 voltage_v=0.82 error=PERFORMANCE_FAIL message=frequency_dropped_after_temperature_rise"}
+{"id":"pcie-03","expected":"pcie_link_training","log":"ts=2026-10-21T09:16:00Z run=E002 device=SIM-17 test=pcie_gen4 status=FAIL error=PCIE_WIDTH_MISMATCH message=negotiated_x4_expected_x8"}
+{"id":"pcie-04","expected":"pcie_link_training","log":"ts=2026-10-21T09:17:00Z run=E002 device=SIM-18 test=pcie_retrain status=ERROR error=LINK_TRAIN_TIMEOUT message=receiver_detect_timeout"}
+{"id":"pcie-05","expected":"pcie_link_training","log":"ts=2026-10-21T09:18:00Z run=E002 device=SIM-19 test=pcie_gen5 status=FAIL error=PCIE_SPEED_FALLBACK message=negotiated_gen3_expected_gen5"}
+{"id":"pcie-06","expected":"pcie_link_training","log":"ts=2026-10-21T09:19:00Z run=E003 device=SIM-20 test=pcie_link status=ERROR message=pcie_retrain_timeout_after_reset"}
+{"id":"pcie-07","expected":"pcie_link_training","log":"ts=2026-10-21T09:20:00Z run=E003 device=SIM-21 test=pcie_eye_scan status=FAIL error=PCIE_MARGIN_LOW message=lane_3_margin_below_limit"}
+{"id":"pcie-08","expected":"pcie_link_training","log":"ts=2026-10-21T09:21:00Z run=E003 device=SIM-22 test=pcie_enumeration status=ERROR error=PCIE_ENUM_TIMEOUT message=device_not_visible_after_link_up"}
+{"id":"pcie-09","expected":"pcie_link_training","log":"ts=2026-10-21T09:22:00Z run=E004 device=SIM-23 test=pcie_link status=FAIL error=LINK_TRAIN_FAIL message=lane_reversal_configuration_mismatch"}
+{"id":"pcie-10","expected":"pcie_link_training","log":"ts=2026-10-21T09:23:00Z run=E004 device=SIM-24 test=pcie_hot_reset status=ERROR error=PCIE_RESET_TIMEOUT message=link_did_not_retrain"}
+{"id":"memory-03","expected":"memory_integrity","log":"ts=2026-10-21T09:24:00Z run=E002 device=SIM-25 test=dram_bist status=FAIL error=ECC_UNCORRECTABLE message=multi_bit_syndrome_detected"}
+{"id":"memory-04","expected":"memory_integrity","log":"ts=2026-10-21T09:25:00Z run=E002 device=SIM-26 test=memory_bandwidth status=ERROR error=DRAM_TIMEOUT message=rank_1_read_timeout"}
+{"id":"memory-05","expected":"memory_integrity","log":"ts=2026-10-21T09:26:00Z run=E002 device=SIM-27 test=memory_bist status=FAIL error=ADDRESS_COMPARE message=memory_data_mismatch_at_address_0x10"}
+{"id":"memory-06","expected":"memory_integrity","log":"ts=2026-10-21T09:27:00Z run=E003 device=SIM-28 test=dram_retention status=ERROR error=MEMORY_RETENTION_FAIL message=pattern_corrupted_after_idle"}
+{"id":"memory-07","expected":"memory_integrity","log":"ts=2026-10-21T09:28:00Z run=E003 device=SIM-29 test=memory_bist status=FAIL error=ECC_CORRECTED_THRESHOLD message=repeated_single_bit_ecc_events"}
+{"id":"memory-08","expected":"memory_integrity","log":"ts=2026-10-21T09:29:00Z run=E003 device=SIM-30 test=dram_training status=ERROR error=DRAM_INIT_FAIL message=memory_training_failed_on_channel_2"}
+{"id":"memory-09","expected":"memory_integrity","log":"ts=2026-10-21T09:30:00Z run=E004 device=SIM-31 test=memory_scrub status=FAIL error=ECC_SCRUB_TIMEOUT message=uncorrectable_memory_error"}
+{"id":"memory-10","expected":"memory_integrity","log":"ts=2026-10-21T09:31:00Z run=E004 device=SIM-32 test=memory_bist status=ERROR error=DRAM_DATA_COMPARE message=memory_readback_mismatch"}
+{"id":"voltage-02","expected":"low_supply_voltage","log":"ts=2026-10-21T09:32:00Z run=E002 device=SIM-33 test=cpu_loadline status=FAIL voltage_v=0.69 error=VOLTAGE_DROOP message=rail_below_minimum_during_load"}
+{"id":"voltage-03","expected":"low_supply_voltage","log":"ts=2026-10-21T09:33:00Z run=E002 device=SIM-34 test=accelerator_burst status=ERROR voltage_v=0.71 error=UVLO_EVENT message=undervoltage_lockout"}
+{"id":"voltage-04","expected":"low_supply_voltage","log":"ts=2026-10-21T09:34:00Z run=E002 device=SIM-35 test=power_transition status=FAIL voltage_v=0.73 error=RAIL_MARGIN_FAIL message=supply_margin_below_spec"}
+{"id":"voltage-05","expected":"low_supply_voltage","log":"ts=2026-10-21T09:35:00Z run=E003 device=SIM-36 test=compute_stress status=ERROR voltage_v=0.66 error=POWER_GOOD_LOST message=core_rail_collapsed"}
+{"id":"voltage-06","expected":"low_supply_voltage","log":"ts=2026-10-21T09:36:00Z run=E003 device=SIM-37 test=cpu_frequency_sweep status=FAIL voltage_v=0.72 error=EXECUTION_ERROR message=unexpected_reset"}
+{"id":"voltage-07","expected":"low_supply_voltage","log":"ts=2026-10-21T09:37:00Z run=E003 device=SIM-38 test=voltage_corner status=FAIL voltage_v=0.70 error=VOLTAGE_LOW message=rail_droop_exceeded_limit"}
+{"id":"voltage-08","expected":"low_supply_voltage","log":"ts=2026-10-21T09:38:00Z run=E004 device=SIM-39 test=package_power status=ERROR voltage_v=0.74 error=SUPPLY_UV message=input_supply_under_voltage"}
+{"id":"voltage-09","expected":"low_supply_voltage","log":"ts=2026-10-21T09:39:00Z run=E004 device=SIM-40 test=load_transient status=FAIL voltage_v=0.68 error=TRANSIENT_DROOP message=voltage_sag_during_load_step"}
+{"id":"voltage-10","expected":"low_supply_voltage","log":"ts=2026-10-21T09:40:00Z run=E004 device=SIM-41 test=compute_validation status=ERROR voltage_v=0.73 error=CORE_RAIL_UNDERVOLT message=core_supply_below_characterized_floor"}
+{"id":"unknown-02","expected":"unclassified_failure","log":"ts=2026-10-21T09:41:00Z run=E002 device=SIM-42 test=boot_smoke status=FAIL error=BOOT_STAGE_4 message=unexpected_state_transition"}
+{"id":"unknown-03","expected":"unclassified_failure","log":"ts=2026-10-21T09:42:00Z run=E002 device=SIM-43 test=firmware_handshake status=ERROR error=HANDSHAKE_17 message=acknowledgment_missing"}
+{"id":"unknown-04","expected":"unclassified_failure","log":"ts=2026-10-21T09:43:00Z run=E002 device=SIM-44 test=security_startup status=FAIL error=AUTH_SEQUENCE_FAIL message=unexpected_response_code"}
+{"id":"unknown-05","expected":"unclassified_failure","log":"ts=2026-10-21T09:44:00Z run=E003 device=SIM-45 test=watchdog_recovery status=ERROR error=RECOVERY_TIMEOUT message=system_did_not_resume"}
+{"id":"unknown-06","expected":"unclassified_failure","log":"ts=2026-10-21T09:45:00Z run=E003 device=SIM-46 test=boot_smoke status=FAIL error=BOOT_SEQUENCE_22 message=unexpected_boot_state"}
+{"id":"unknown-07","expected":"unclassified_failure","log":"ts=2026-10-21T09:46:00Z run=E003 device=SIM-47 test=firmware_update status=ERROR error=UPDATE_ABORTED message=update_stage_failed_without_detail"}
+{"id":"unknown-08","expected":"unclassified_failure","log":"ts=2026-10-21T09:47:00Z run=E004 device=SIM-48 test=interconnect_test status=FAIL error=CHECKSUM_9 message=payload_validation_mismatch"}
+{"id":"unknown-09","expected":"unclassified_failure","log":"ts=2026-10-21T09:48:00Z run=E004 device=SIM-49 test=boot_smoke status=ERROR error=BOOT_SEQUENCE_31 message=unexpected_state_transition"}
+{"id":"unknown-10","expected":"unclassified_failure","log":"ts=2026-10-21T09:49:00Z run=E004 device=SIM-50 test=power_state_test status=FAIL error=STATE_MACHINE_6 message=invalid_transition_observed"}

@@ -1,0 +1,7 @@
+# SIMULATED data for portfolio/demo use; not Apple or production silicon data.
+ts=2026-10-21T11:15:02Z run=R002 device=SOC-A17-001 test=boot_smoke status=PASS temp_c=26.0 voltage_v=0.80 duration_ms=144
+ts=2026-10-21T11:15:12Z run=R002 device=SOC-A17-001 test=cpu_stress status=PASS temp_c=73.1 voltage_v=0.82 freq_mhz=3200 duration_ms=60000
+ts=2026-10-21T11:16:18Z run=R002 device=SOC-A17-001 test=memory_bist status=PASS temp_c=69.0 voltage_v=0.80 duration_ms=18100
+ts=2026-10-21T11:16:42Z run=R002 device=SOC-A17-001 test=pcie_link status=PASS temp_c=70.2 voltage_v=0.80 duration_ms=795
+ts=2026-10-21T11:17:21Z run=R002 device=SOC-A17-003 test=boot_smoke status=PASS temp_c=25.3 voltage_v=0.80 duration_ms=141
+ts=2026-10-21T11:17:30Z run=R002 device=SOC-A17-003 test=memory_bist status=ERROR temp_c=67.4 voltage_v=0.79 duration_ms=3200 error=ECC_UNCORRECTABLE message="uncorrectable memory error"
